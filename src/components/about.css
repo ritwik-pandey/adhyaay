@@ -1,0 +1,69 @@
+/* About.css - Option A */
+.about-section {
+  padding: 80px 0;
+  background-color: #f9f9f9; /* Light grey background */
+  display: flex;
+  justify-content: center;
+}
+
+.about-container {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  max-width: 1200px;
+  width: 90%;
+  flex-wrap: wrap; /* Makes it responsive */
+}
+
+.about-image-wrapper {
+  flex: 1;
+  min-width: 300px;
+}
+
+.about-image {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+.about-content {
+  flex: 1;
+  min-width: 300px;
+  padding: 20px;
+}
+
+.about-subtitle {
+  color: #ff4d4d; /* Red accent */
+  font-weight: 700;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+  font-size: 0.9rem;
+}
+
+.about-title {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #333;
+  line-height: 1.2;
+}
+
+.about-text {
+  color: #666;
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+
+.about-btn {
+  padding: 12px 30px;
+  background-color: #333;
+  color: white;
+  border: none;
+  cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: background 0.3s;
+}
+
+.about-btn:hover {
+  background-color: #ff4d4d;
+}

@@ -1,0 +1,110 @@
+/* Gallery.css */
+.gallery-section {
+  background-color: #0a0a0a; /* Very deep black, slightly different from socials for depth */
+  padding: 100px 20px;
+  color: white;
+}
+
+.gallery-header {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.gallery-subtitle {
+  color: #666;
+  letter-spacing: 4px;
+  font-size: 0.9rem;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+.gallery-title {
+  font-size: 3rem;
+  font-weight: 800;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.gold-text {
+  color: #d4af37;
+}
+
+/* --- The Grid Layout --- */
+.gallery-grid {
+  display: grid;
+  /* This magically creates responsive columns */
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 25px;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+/* --- The Card Design --- */
+.gallery-card {
+  position: relative; /* Needed for the overlay to sit on top */
+  height: 400px; /* Fixed height for uniformity */
+  border-radius: 12px;
+  overflow: hidden; /* Ensures image zoom doesn't spill out */
+  cursor: pointer;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+}
+
+/* The Image */
+.gallery-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensures image covers the box without stretching */
+  transition: transform 0.5s ease; /* Smooth zoom effect */
+}
+
+/* Hover Effect: Zoom Image */
+.gallery-card:hover .gallery-img {
+  transform: scale(1.1);
+}
+
+/* --- The Dark Overlay --- */
+.gallery-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /* Creates a dark fade from bottom to top */
+  background: linear-gradient(to top, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0.2) 60%, transparent 100%);
+  opacity: 0; /* Hidden by default */
+  transition: opacity 0.4s ease;
+  
+  /* Flex to position text at bottom */
+  display: flex;
+  align-items: flex-end;
+  padding: 30px;
+}
+
+/* Hover Effect: Show Overlay */
+.gallery-card:hover .gallery-overlay {
+  opacity: 1;
+}
+
+.overlay-content h3 {
+  color: #d4af37; /* Gold caption */
+  margin: 0 0 5px 0;
+  font-size: 1.3rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  transform: translateY(20px); /* Start slightly down */
+  transition: transform 0.5s ease;
+}
+
+.overlay-content p {
+  color: #ccc;
+  margin: 0;
+  font-size: 0.9rem;
+  transform: translateY(20px); /* Start slightly down */
+  transition: transform 0.5s ease 0.1s; /* 0.1s delay for staggered effect */
+}
+
+/* Hover Effect: Slide text up */
+.gallery-card:hover .overlay-content h3,
+.gallery-card:hover .overlay-content p {
+   transform: translateY(0);
+}
