@@ -1,0 +1,22 @@
+.footer-section {
+    height: 500px; /* Adjust height as needed */
+    background-color: #3e5158;
+}
+
+.footer-element {
+    padding: 5%;
+}
+
+.footer-container {
+    color: #cbf4f0;
+    text-align: center;
+    font-size: 1.3rem;
+}
+
+.footer-linktree a {
+    color: #cbf4f0;
+}
+
+.footer-linktree a:hover {
+    color: black;
+}

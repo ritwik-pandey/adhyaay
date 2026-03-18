@@ -1,8 +1,8 @@
 /* Socials.css */
 .social-section {
-  background-color: white; /* Deep black background */
+  background-color: #cbf4f0; /* Deep black background */
   padding: 80px 20px;
-  color: black;
+  color: #3e5158;
   text-align: center;
 }
 
@@ -11,7 +11,7 @@
 }
 
 .section-subtitle {
-  color: #666;
+  color: #3e5158;
   letter-spacing: 4px;
   font-size: 0.9rem;
   margin-bottom: 10px;
@@ -23,6 +23,7 @@
   font-weight: 800;
   margin: 0;
   text-transform: uppercase;
+  color: #3e5158;
 }
 
 .gold-text {
@@ -40,9 +41,9 @@
 
 /* Card Styling */
 .social-card {
-  background-color: #111; /* Slightly lighter than background */
+  background-color: #3e5158; /* Slightly lighter than background */
   border: 1px solid #333;
-  padding: 30px 20px;
+  padding: 30px 20px 10px 20px;
   text-decoration: none;
   color: white;
   border-radius: 4px;

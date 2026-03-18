@@ -2,8 +2,9 @@ import React, { useState, useEffect } from 'react';
 import './slider.css';
 
 // IMPORT YOUR LOCAL IMAGES HERE
-import img1 from '../assets/img/banaras.jpg'; 
-import img2 from '../assets/img/comeback.jpg'; 
+import img1 from '../assets/img/adhyaay_parichay_artwork.jpg'; 
+import img2 from '../assets/img/adhyaay_db_mixtape.jpg';
+import img3 from '../assets/img/adhyaay_banaras.jpg' 
 
 
 const HeroSlider = () => {
@@ -12,18 +13,26 @@ const HeroSlider = () => {
     {
       id: 1,
       image: img1, // Using the imported variable
-      title: "Banaras",
-      subtitle: "On youtube",
-      cta: "Watch now",
-      link: "https://youtube.com"
+      title: "Parichay",
+      subtitle: "First Solo Studio Album",
+      cta: "Listen now",
+      link: "https://youtube.com/playlist?list=PLDSy40BJDNVf825qSYfs4WrUO97PgBYd5&si=OaJ8617fjNWMuUgo"
     },
     {
       id: 2,
       image: img2, // Using the imported variable
-      title: "Comeback",
-      subtitle: "On youtube",
-      cta: "Watch now",
-      link: "https://youtube.com"
+      title: "dB MixTape",
+      subtitle: "Bollywood MixTape",
+      cta: "Listen now",
+      link: "https://youtube.com/playlist?list=PLDSy40BJDNVf9MMWSq-Zpv8Me8TDstFNa&si=f0FlQLYxg0CkkrrQ"
+    },
+    {
+      id: 3,
+      image: img3, // Using the imported variable
+      title: "Banaras",
+      subtitle: "Rap Blog",
+      cta: "Listen now",
+      link: "https://youtu.be/t2qhxp0gcM0?si=6D4kXXRfGtptDVpo"
     }
   ];
 
@@ -53,6 +62,7 @@ const HeroSlider = () => {
           {index === current && (
             <>
               <img src={slide.image} alt={slide.title} className="slide-image" />
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/t2qhxp0gcM0?si=OuQpglYvIoT7_C8A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
               <div className="slide-content">
                 <h1 className="main-title">{slide.title}</h1>
                 <h2 className="subtitle">{slide.subtitle}</h2>
