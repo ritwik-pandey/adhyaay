@@ -4,6 +4,7 @@ import Slider from './components/slider';
 import About from './components/about';
 import Gallery from './components/gallery';
 import Socials from './components/socials';
+import Footer from './components/footer'
 
 function App() {
   
@@ -15,6 +16,7 @@ function App() {
       <About />
       <Gallery />
       <Socials />
+      <Footer />
     </>
   )
 }
