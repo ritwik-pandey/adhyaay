@@ -1,7 +1,7 @@
 /* About.css - Option A */
 .about-section {
   padding: 80px 0;
-  background-color: #cbf4f0; /* Light grey background */
+  background-color: #fff;
   display: flex;
   justify-content: center;
 }
@@ -48,7 +48,7 @@
 .about-btn {
   padding: 12px 30px;
   background-color: #333;
-  color: white;
+  color: #fff;
   border: none;
   cursor: pointer;
   text-transform: uppercase;
@@ -57,5 +57,5 @@
 }
 
 .about-btn:hover {
-  background-color: #ff4d4d;
+  background-color: #3e5158;
 }

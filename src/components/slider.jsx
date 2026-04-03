@@ -62,12 +62,10 @@ const HeroSlider = () => {
           {index === current && (
             <>
               <img src={slide.image} alt={slide.title} className="slide-image" />
-              <iframe width="560" height="315" src="https://www.youtube.com/embed/t2qhxp0gcM0?si=OuQpglYvIoT7_C8A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
               <div className="slide-content">
                 <h1 className="main-title">{slide.title}</h1>
                 <h2 className="subtitle">{slide.subtitle}</h2>
                 <a href={slide.link} className="cta-button" target="_blank" rel="noopener noreferrer">{slide.cta}</a>
-                {/* <button className="cta-button">{slide.cta}</button> */}
               </div>
             </>
           )}
