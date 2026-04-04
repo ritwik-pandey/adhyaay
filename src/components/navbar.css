@@ -5,18 +5,19 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1.2rem 2.5rem;
+  padding: 1.2rem 2rem 1.2rem 1rem;
   position: sticky; /* Sticks to top but allows content above it initially */
   top: 0;
   z-index: 10;
 }
 
-/* .navbar-logo {
-  font-size: 1.6rem;
-  font-weight: 700;
-  color: #222;
-  text-transform: uppercase;
-} */
+.navbar-logo {
+  transition: transform 0.3s ease-in-out;
+}
+
+.navbar-logo:hover {
+  transform: scale(1.05);
+}
 
 .navbar-links {
   display: flex;
@@ -28,7 +29,7 @@
 
 .navbar-links a {
   text-decoration: none;
-  color: #333;
+  color: #3e5158;
   font-weight: 600;
   font-size: 1.5rem;
   position: relative; /* Needed for the underline animation */
@@ -42,7 +43,7 @@
   height: 2px;
   bottom: -4px;
   left: 0;
-  background-color: #646cff; /* Vite Purple */
+  background-color: #333;
   transition: width 0.3s ease-in-out;
 }
 
@@ -51,5 +52,5 @@
 }
 
 .navbar-links a:hover {
-  color: #646cff;
+  color: #333;
 }

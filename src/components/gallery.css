@@ -1,8 +1,8 @@
 /* Gallery.css */
 .gallery-section {
-  background-color: #3e5158; /* Very deep black, slightly different from socials for depth */
+  background-color: #cbf4f0; /* Very deep black, slightly different from socials for depth */
   padding: 100px 20px;
-  color: #cbf4f0;
+  color: #3e5158;
 }
 
 .gallery-header {
@@ -11,7 +11,7 @@
 }
 
 .gallery-subtitle {
-  color: #cbf4f0;
+  color: #3e5158;
   letter-spacing: 4px;
   font-size: 0.9rem;
   margin-bottom: 10px;
@@ -91,7 +91,7 @@
   font-size: 1.3rem;
   text-transform: uppercase;
   font-weight: bold;
-  transform: translateY(20px); /* Start slightly down */
+  transform: translateY(10px); /* Start slightly down */
   transition: transform 0.5s ease;
 }
 
@@ -99,12 +99,12 @@
   color: #ccc;
   margin: 0;
   font-size: 0.9rem;
-  transform: translateY(20px); /* Start slightly down */
+  transform: translateY(10px); /* Start slightly down */
   transition: transform 0.5s ease 0.1s; /* 0.1s delay for staggered effect */
 }
 
 /* Hover Effect: Slide text up */
 .gallery-card:hover .overlay-content h3,
 .gallery-card:hover .overlay-content p {
-   transform: translateY(-50px);
+   transform: translateY(-10px);
 }

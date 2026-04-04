@@ -6,7 +6,7 @@ import logoImage from '../assets/img/adhyaay_logo.jpg'
 function Navbar() {
   return (
     <nav className="navbar">
-      <div className="navbar-logo"><a href='/'><img src={logoImage} /></a></div>
+      <div className="navbar-logo"><a href='/'><img src={logoImage} height={40} /></a></div>
       <ul className="navbar-links">
         <li><a href='#about-adhyaay'>About</a></li>
         <li><a href="#gallery-adhyaay">Gallery</a></li>
