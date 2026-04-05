@@ -1,0 +1,137 @@
+/* blog.css */
+.blog-section {
+  background-color: #ffffff; /* Alternating from the gallery's #cbf4f0 */
+  padding: 100px 20px;
+  color: #3e5158;
+}
+
+.blog-header {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.blog-subtitle {
+  color: #3e5158;
+  letter-spacing: 4px;
+  font-size: 0.9rem;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+.blog-title {
+  font-size: 3rem;
+  font-weight: 800;
+  margin: 0;
+  text-transform: uppercase;
+  color: #3e5158;
+}
+
+.gold-text {
+  color: #d4af37;
+}
+
+/* Grid Layout */
+.blog-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.loading-text {
+  text-align: center;
+  grid-column: 1 / -1;
+  font-size: 1.2rem;
+  color: #888;
+}
+
+/* Card Styling */
+.blog-card {
+  position: relative;
+  background-color: #3e5158;
+  color: #ffffff;
+  border-radius: 12px;
+  padding: 30px;
+  min-height: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+  overflow: hidden;
+  cursor: pointer;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  border: 1px solid transparent;
+}
+
+.blog-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+  border-color: #d4af37;
+}
+
+.blog-content {
+  position: relative;
+  z-index: 2;
+  transition: transform 0.4s ease;
+}
+
+.blog-card-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #ffffff;
+}
+
+.blog-date {
+  font-size: 0.85rem;
+  color: #d4af37;
+  margin-bottom: 15px;
+}
+
+.blog-excerpt {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #cccccc;
+}
+
+/* Hover Overlay for 'Read More' */
+.blog-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(26, 26, 26, 0.95);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  z-index: 3;
+}
+
+.blog-card:hover .blog-overlay {
+  opacity: 1;
+}
+
+.read-more {
+  color: #d4af37;
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  display: flex;
+  align-items: center;
+  transform: translateY(20px);
+  transition: transform 0.4s ease;
+}
+
+.blog-card:hover .read-more {
+  transform: translateY(0);
+}
+
+.arrow {
+  margin-left: 8px;
+  font-family: monospace;
+}
