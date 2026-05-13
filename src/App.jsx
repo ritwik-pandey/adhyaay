@@ -1,3 +1,4 @@
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import './App.css'
 import Navbar from './components/navbar';
 import Slider from './components/slider';
@@ -6,9 +7,20 @@ import Gallery from './components/gallery';
 import Blog from './components/blog';
 import Socials from './components/socials';
 import Footer from './components/footer'
+import BlogPost from './components/BlogPost';
 
 import { useEffect } from 'react';
 import { logBlogPosts } from './firebase';
+
+const Home = () => (
+  <>
+    <Slider />
+    <About />
+    <Gallery />
+    <Blog />
+    <Socials />
+  </>
+);
 
 function App() {
 
@@ -17,15 +29,14 @@ function App() {
   }, []);
 
   return (
-    <>
+    <Router>
       <Navbar />
-      <Slider />
-      <About />
-      <Gallery />
-      <Blog />
-      <Socials />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/blog/:id" element={<BlogPost />} />
+      </Routes>
       <Footer />
-    </>
+    </Router>
   )
 }
 

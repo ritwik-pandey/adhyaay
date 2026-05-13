@@ -1,0 +1,159 @@
+.blog-post-container {
+    background-color: #0b1120; /* Dark background matching the image */
+    color: #e2e8f0;
+    min-height: 100vh;
+    padding: 120px 20px 80px; /* Padding top for navbar */
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+.blog-post-content-wrapper {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.breadcrumb {
+    color: #94a3b8;
+    font-size: 0.95rem;
+    margin-bottom: 2rem;
+}
+
+.breadcrumb a {
+    color: #94a3b8;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.breadcrumb a:hover {
+    color: #38bdf8;
+}
+
+.post-main-title {
+    font-size: 3.5rem;
+    font-weight: 500;
+    line-height: 1.2;
+    margin-bottom: 2.5rem;
+    color: #f8fafc;
+}
+
+.author-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #1e293b;
+    padding-bottom: 1.5rem;
+    margin-bottom: 3rem;
+}
+
+.author-info {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.author-avatar img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.author-details {
+    display: flex;
+    flex-direction: column;
+}
+
+.author-name {
+    font-size: 1.05rem;
+    font-weight: 500;
+    color: #cbd5e1;
+    margin: 0 0 0.2rem 0;
+}
+
+.post-meta {
+    font-size: 0.85rem;
+    color: #64748b;
+    margin: 0;
+}
+
+.social-share {
+    display: flex;
+    gap: 0.8rem;
+}
+
+.share-btn {
+    background-color: #0f172a;
+    border: none;
+    color: #cbd5e1;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.share-btn:hover {
+    background-color: #1e293b;
+    transform: translateY(-2px);
+}
+
+.post-body {
+    font-size: 1.15rem;
+    line-height: 1.8;
+    color: #94a3b8;
+}
+
+.post-section-title {
+    font-size: 3rem;
+    color: #f8fafc;
+    margin-top: 3.5rem;
+    margin-bottom: 1.5rem;
+    font-weight: 400;
+}
+
+.post-text {
+    margin-bottom: 1.5rem;
+}
+
+.post-list {
+    margin-top: 2rem;
+    padding-left: 1.5rem;
+}
+
+.post-list li {
+    margin-bottom: 1.8rem;
+    color: #94a3b8;
+    line-height: 1.8;
+}
+
+.post-list li strong {
+    color: #a3b8cc; /* Lighter text for the bold start of list items */
+    font-weight: 500;
+}
+
+.blog-post-loading {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #0b1120;
+    color: white;
+    font-size: 1.5rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .post-main-title {
+        font-size: 2.5rem;
+    }
+    .post-section-title {
+        font-size: 2.2rem;
+    }
+    .author-section {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem;
+    }
+}
